@@ -1,0 +1,9 @@
+{
+	"num":2,
+	"geojson":"aso.geojson",
+	"zoom":15,
+	"url":["https://cyberjapandata.gsi.go.jp/xyz/std/"],
+	"out":"C:/Workspace/java/20190808/geoply/",
+	"name":"std",
+	"ext":"png"
+}

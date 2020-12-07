@@ -1,0 +1,9 @@
+{
+	"num":2,
+	"geojson":"aso.geojson",
+	"zoom":15,
+	"url":["https://map.ecoris.info/tiles/vege67/"],
+	"out":"C:/Workspace/java/20190808/geoply/",
+	"name":"vega",
+	"ext":"png"
+}

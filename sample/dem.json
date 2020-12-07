@@ -1,0 +1,11 @@
+{
+	"num":2,
+	"geojson":"aso.geojson",
+	"zoom":15,
+	"url":["https://cyberjapandata.gsi.go.jp/xyz/dem5a_png/",
+			"https://cyberjapandata.gsi.go.jp/xyz/dem5a_png/",
+			"https://cyberjapandata.gsi.go.jp/xyz/dem5a_png/"],
+	"out":"C:/Workspace/java/20190808/geoply/",
+	"name":"dem",
+	"ext":"png"
+}
