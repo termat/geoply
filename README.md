@@ -1,6 +1,7 @@
 # geoply
 
 地理院タイルから三次元地形モデルを生成するコマンドラインツールです。
+プロジェクトをダウンロードして「mvn install」すれば、geoply-jar-with-dependencies.jarが生成されます。
 
 ### TileImageGetter
 Geojsonで指定した範囲の地理院タイル画像を取得・結合するツール
