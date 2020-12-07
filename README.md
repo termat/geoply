@@ -5,9 +5,9 @@
 ### TileImageGetter
 Geojsonで指定した範囲の地理院タイル画像を取得・結合するツール
 以下のコマンドで実行します。
-```
-java -classpath geoply-jar-with-dependencies.jar net.termat.geoply.TileImageGetter <jsonファイルのpath>
-```
+
+>java -classpath geoply-jar-with-dependencies.jar net.termat.geoply.TileImageGetter <jsonファイルのpath>
+
 なお、取得条件はjsonで指定します。 
 ```
 {
@@ -25,15 +25,15 @@ java -classpath geoply-jar-with-dependencies.jar net.termat.geoply.TileImageGett
 ### DEMInterpoler
 TileImageGetterで取得したDEM画像（標高PNG）を指定の参照ファイル（及びワールドファイル）と同じ解像度に補間します。
 以下のコマンドで実行します。
-```
-java -classpath geoply-jar-with-dependencies.jar net.termat.geoply.DEMInterpoler <参照ファイルのpath> <出力先のpath> <読み込むDEM画像>・・・
-```
+
+>java -classpath geoply-jar-with-dependencies.jar net.termat.geoply.DEMInterpoler <参照ファイルのpath> <出力先のpath> <読み込むDEM画像>・・・
+
 ### TerrainImageProcesser
 TileImageGetterで取得したDEM画像（標高PNG）から、傾斜量図、曲率図、CS立体図を生成します。
 以下のコマンドで実行します。<作成画像>は[slope.curve,cs]のいずれか入力します。
-```
-java -classpath geoply-jar-with-dependencies.jar net.termat.geoply.TerrainImageProcesser <作成画像> <DEM画像のpath> <出力先のpath>
-```
+
+>java -classpath geoply-jar-with-dependencies.jar net.termat.geoply.TerrainImageProcesser <作成画像> <DEM画像のpath> <出力先のpath>
+
 ### PlyCreator
 DEM画像とテクスチャ画像から三次元地形モデル（PLY形式）を生成します。
 なお、DEM画像とテクスチャ画像は同サイズで、同じ値のワールドファイル（アフィン変換）を持つ必要があります。
