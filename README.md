@@ -11,15 +11,15 @@ Geojsonで指定した範囲の地理院タイル画像を取得・結合する�
 なお、取得条件はjsonで指定します。 
 ```
 {
-	"num":2,   //平面直角座標系のNo.
-	"geojson":"C:/Workspace/java/geoply/aso.geojson",    //取得する領域のgeojson
-	"zoom":15,  //取得する画像のズームレベル
-	"url":["https://cyberjapandata.gsi.go.jp/xyz/dem5a_png/",  //取得するタイルのurlのリスト
-			"https://cyberjapandata.gsi.go.jp/xyz/dem5a_png/",　　 //上位URLのタイル画像が無い場合は下位URLを検索する
-			"https://cyberjapandata.gsi.go.jp/xyz/dem5a_png/"],
-	"out":"C:/Workspace/java/geoply/",   //出力先
-	"name":"dem",  //出力ファイル名のprefix
-	"ext":"png"    //取得するタイル画像の拡張子
+  "num":2,   //平面直角座標系のNo.
+  "geojson":"C:/Workspace/java/geoply/aso.geojson",    //取得する領域のgeojson
+  "zoom":15,  //取得する画像のズームレベル
+  "url":["https://cyberjapandata.gsi.go.jp/xyz/dem5a_png/",  //取得するタイルのurlのリスト
+	"https://cyberjapandata.gsi.go.jp/xyz/dem5a_png/",　 //上位URLのタイル画像が無い場合
+	"https://cyberjapandata.gsi.go.jp/xyz/dem5a_png/"],  //は下位URLを検索する
+  "out":"C:/Workspace/java/geoply/",   //出力先
+  "name":"dem",  //出力ファイル名のprefix
+  "ext":"png"    //取得するタイル画像の拡張子
 }
 ```  
 ### DEMInterpoler
