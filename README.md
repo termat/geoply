@@ -9,6 +9,7 @@ Geojsonで指定した範囲の地理院タイル画像を取得・結合する�
 
 なお、取得条件はjsonで指定します。
 (例)
+    
 {
 	"num":2,   //平面直角座標系のNo.
 	"geojson":"C:/Workspace/java/geoply/aso.geojson",    //取得する領域のgeojson
@@ -20,7 +21,7 @@ Geojsonで指定した範囲の地理院タイル画像を取得・結合する�
 	"name":"dem",  //出力ファイル名のprefix
 	"ext":"png"    //取得するタイル画像の拡張子
 }
-
+    
 ### DEMInterpoler
 TileImageGetterで取得したDEM画像（標高PNG）を指定の参照ファイル（及びワールドファイル）と同じ解像度に補間します。
 以下のコマンドで実行します。
