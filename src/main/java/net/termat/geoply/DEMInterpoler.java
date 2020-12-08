@@ -37,7 +37,7 @@ public class DEMInterpoler {
 			}
 			app.process();
 			ImageIO.write(app.getImage(), "png", out);
-			WorldFile.outTfw(af, new File(out.getAbsolutePath().replace(".png", "pgw")));
+			WorldFile.outTfw(af, new File(out.getAbsolutePath().replace(".png", ".pgw")));
 		}catch(IOException e){
 			e.printStackTrace();
 		}
