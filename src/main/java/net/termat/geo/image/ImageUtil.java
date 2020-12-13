@@ -1,6 +1,8 @@
 package net.termat.geo.image;
 
 import java.awt.Color;
+import java.awt.Graphics2D;
+import java.awt.geom.AffineTransform;
 import java.awt.image.BufferedImage;
 import java.awt.image.ConvolveOp;
 import java.awt.image.Kernel;
@@ -131,6 +133,25 @@ public class ImageUtil {
 		ConvolveOp convop=new ConvolveOp(blur,ConvolveOp.EDGE_NO_OP,null);
 		BufferedImage bimg=convop.filter(img,null);
 		return bimg;
+	}
+
+	/**
+	 * 画像フィルタのスケーリング
+	 * @param img 画像
+	 * @param sx xスケーリング倍率
+	 * @param sy yスケーリング倍率
+	 * @return
+	 */
+	public static BufferedImage scale(BufferedImage img,double sx,double sy,Color back){
+	    BufferedImage after = new BufferedImage((int)(img.getWidth()*sx), (int)(img.getHeight()*sy), BufferedImage.TYPE_INT_RGB);
+	    AffineTransform scaleInstance = AffineTransform.getScaleInstance(sx,sy);
+	    Graphics2D g=after.createGraphics();
+	    g.setBackground(back);
+	    g.clearRect(0, 0, after.getWidth(), after.getHeight());
+	    g.setTransform(scaleInstance);
+	    g.drawImage(img, 0, 0, null);
+	    g.dispose();
+	    return after;
 	}
 
 }
